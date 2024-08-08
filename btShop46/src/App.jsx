@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 export default function App() {
   const totalItem = 25000;
-  let itemPerPage = 1000;
+  let itemPerPage = 20;
   const totalPage = Math.ceil(totalItem / itemPerPage);
   const [paginate, setPaginate] = useState({
     page: 1,
